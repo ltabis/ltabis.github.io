@@ -17,8 +17,12 @@
 
 	<!-- Project Grid -->
 	<div class="container">
-		<div id="project-grid" class="row row-cols-3" style="margin: 1%;"/>
-	</div>
+    <div id="project-grid" class="row row-cols-3" style="margin: 1%;">
+        {% for project in projects %}
+            {{ project }}
+        {% endfor %}
+    </div>
+</div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
