@@ -9,7 +9,7 @@ def index():
 
     project_templates = create_project_templates()
 
-    with open('./index.static.html', 'w') as file:
+    with open('./index.html', 'w') as file:
         file.write(render_template('index.html', projects=project_templates))
 
 
