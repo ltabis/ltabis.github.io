@@ -28,7 +28,7 @@ def create_project_templates():
         repo = auth.get_repo(project)
 
         template_array.append(
-            Markup(render_template('project_card.html', title=repo.name, link=repo.url, desc=repo.description))
+            Markup(render_template('project_card.html', title=repo.name, link=repo.html_url, desc=repo.description))
         )
 
     return template_array
