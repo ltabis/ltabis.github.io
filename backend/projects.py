@@ -1,7 +1,6 @@
-from github import Github
 from flask import render_template, Markup
 from sys import stderr
-from os import getenv
+from .github_api import connect_to_github 
 
 def create_project_templates():
     """Create a template for each choosen project.
@@ -32,11 +31,3 @@ def create_project_templates():
         )
 
     return template_array
-
-
-def connect_to_github():
-
-    if not getenv('GITHUB_USER') or not getenv('GITHUB_PASSWORD'):
-        raise EnvironmentError('GITHUB_USER & GITHUB_PASSWORD variables are missing.')
-
-    return Github(getenv('GITHUB_USER'), getenv('GITHUB_PASSWORD'))
