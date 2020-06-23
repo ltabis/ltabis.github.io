@@ -1,12 +1,12 @@
 <div class="col" style="height: 25rem;">
-    <div class="card">
-        <div id="project-title" class="card-header">{{ title }}</div>
-        <div class="text-center">
+    <div class="card border-light" style="background-color: black;">
+        <div id="project-title" class="card-header border-light">{{ title }}</div>
+        <div class="text-center text-warning">
             <img src="{{ image }}" id="project-image" width="100" style="margin: 10px;">
         </div>
         <div class="card-body">
             <p id="project-desc" class="card-text">{{ desc }}</p>
-            <a href="{{ link }}" id="github-link" class="btn btn-dark text-left">Github</a>
+            <a href="{{ link }}" id="github-link" class="btn bg-warning text-left" style="color: black;">Github</a>
         </div>
     </div>
 </div>

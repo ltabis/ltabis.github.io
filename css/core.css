@@ -1,0 +1,10 @@
+@font-face {
+    font-family: FiraCode;
+    src: url(FiraCode-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: black;
+    font-family: FiraCode;
+    color: white;
+}
