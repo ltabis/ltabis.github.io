@@ -1,6 +1,11 @@
 <div >
     <h1 style="text-align: center; margin: 20px;">
         {{ name }}
+        <br>
+        <div style="font-size: 30px;">
+            <span class="badge badge-light">version {{ version }}</span>
+            <span class="badge badge-light">date {{ date }}</span>
+        </div>
     </h1>
 
     <img src="{{ pic }}" class="rounded mx-auto d-block" width="200" style="margin: 10px;">
@@ -9,6 +14,9 @@
         {{ bio }}
     </h3>
 
+    <h4 style="text-align: center; margin: 50px;">
+        {{ location }} | {{ company }} | {{ email }}
+    </h4>
     <div class="container" style="text-align: center; margin-bottom: 50px;">
         <a href="https://www.linkedin.com/in/lucas-tabis-791921154/" class="btn bg-primary text-centered" style="color: white;">Linkedin</a>
         <a href="https://www.linkedin.com/in/lucas-tabis-791921154/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAACUn2R0BYtRAL18A1paG2Yh9xosqfLkE3w4,1570695735361)/" class="btn bg-light text-centered" style="color: black;">Curriculum Vitae</a>
