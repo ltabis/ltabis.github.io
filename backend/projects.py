@@ -12,6 +12,7 @@ def create_project_templates():
     auth = connect_to_github()
 
     projects = {
+        "ltabis/accounts-cli": "assets/dollar-logo.png",
         "ltabis/electron-dev-environment": "assets/electron-logo.png",
         "matteovol/EclataxEngine": "assets/cpp-logo.png",
         "ltabis/raytracer": "assets/rust-logo.png",
