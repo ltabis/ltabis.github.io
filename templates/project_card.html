@@ -1,6 +1,9 @@
-<div class="col" style="height: 25rem;">
-    <div class="card border-light" style="background-color: black;">
-        <div id="project-title" class="card-header border-light">{{ title }}</div>
+<div class="col" style="height: 30rem;">
+    <span class="badge" style="color: {{ language_text_color }}; background-color: {{ color }};">{{ language_name }}</span>
+    <div class="card" style="background-color: black; border-color: {{ color }}; border-width: 5px">
+        <div id="project-title" class="card-header border-light">
+            {{ title }}
+        </div>
         <div class="text-center text-warning">
             <img src="{{ image }}" id="project-image" width="100" style="margin: 10px;">
         </div>
