@@ -8,3 +8,15 @@ body {
     font-family: FiraCode;
     color: white;
 }
+
+.btn.btn-light:disabled {
+    opacity: 100%;
+}
+
+.btn.btn-dark:disabled {
+    opacity: 100%;
+}
+
+.btn.btn-danger:disabled {
+    opacity: 100%;
+}
