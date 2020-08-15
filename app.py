@@ -8,9 +8,12 @@ app = Flask(__name__)
 @app.route('/')
 def index():
 
-    project_templates = create_project_templates()
+    project_templates, others_template = create_project_templates()
     profile_template = create_profile_template()
-    static = render_template('index.html', projects=project_templates, profile=profile_template)
+    static = render_template('index.html',
+    projects=project_templates,
+    others=others_template,
+    profile=profile_template)
 
     with open('./index.html', 'w') as file:
         file.write(static)

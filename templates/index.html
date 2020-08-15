@@ -32,6 +32,16 @@
             {{ project }}
         {% endfor %}
     </div>
+    <div class="container rounded">
+      <h2 style="text-align: center; margin: 20px;">
+        === Others ===
+      </h2>
+      <div id="others-grid" class="row row-cols-1 row-cols-md-3" style="margin: 2%;">
+        {% for other in others %}
+            {{ other }}
+        {% endfor %}
+    </div>
+    </div>
   </div>
 
   <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin: 10px;">
