@@ -1,5 +1,7 @@
 <div class="col" style="height: 30rem;">
-    <span class="badge" style="color: {{ language_text_color }}; background-color: {{ color }};">{{ language_name }}</span>
+    {% for badge in badges %}
+        <span class="badge" style="color: {{ badge[1] }}; background-color: {{ badge[2] }};">{{ badge[0] }}</span>
+    {% endfor %}
     <div class="card" style="background-color: black; border-color: {{ color }}; border-width: 5px">
         <div id="project-title" class="card-header border-light">
             {{ title }}
